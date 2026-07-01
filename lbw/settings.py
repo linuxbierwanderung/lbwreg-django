@@ -45,6 +45,7 @@ INSTALLED_APPS = (
 
     # dependencies
     'crispy_forms',
+    'crispy_bootstrap4',
 
     # actual LBW apps
     'accounts',
@@ -97,7 +98,6 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = True
 
 USE_TZ = True
 
@@ -155,7 +155,8 @@ else:
 
 # Templates
 
-CRISPY_TEMPLATE_PACK = 'bootstrap3'
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
